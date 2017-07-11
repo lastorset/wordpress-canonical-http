@@ -40,3 +40,5 @@ function canon_modify_canonical_url($canonical_url) {
 }
 
 add_filter('get_canonical_url', 'canon_modify_canonical_url');
+// Yoast SEO has its own canonical URL
+add_filter('wpseo_canonical', 'canon_modify_canonical_url');
