@@ -10,21 +10,10 @@ $modify_before_date = '2017-07-10';
 function canon_should_modify() {
     global $modify_before_date;
 
-    try {
-        if ((is_single() || is_page()) && have_posts()) {
-            while (have_posts()) {
-                the_post();
+    $date = get_the_date('Y-m-d');
 
-                $date = get_the_date('Y-m-d');
-
-                if ($date < $modify_before_date) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    } finally {
-        rewind_posts();
+    if ($date < $modify_before_date) {
+        return true;
     }
 }
 
