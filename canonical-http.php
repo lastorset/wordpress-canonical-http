@@ -14,9 +14,9 @@ function canon_modify_canonical_url($canonical_url) {
     $date = get_the_date('Y-m-d');
 
     if ($date < $modify_before_date) {
-        return str_replace('https://', 'http://', $original_url);
+        return str_replace('https://', 'http://', $canonical_url);
     } else {
-        return str_replace('http://', 'https://', $original_url);
+        return str_replace('http://', 'https://', $canonical_url);
     }
 }
 
