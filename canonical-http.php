@@ -18,7 +18,7 @@ function canon_should_modify() {
 }
 
 function canon_modify_url($original_url) {
-    return str_replace('https', 'http', $original_url);
+    return str_replace('https://', 'http://', $original_url);
 }
 
 function canon_modify_canonical_url($canonical_url) {
