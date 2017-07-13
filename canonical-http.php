@@ -5,7 +5,7 @@
 
 // TODO: Option: date
 
-$modify_before_date = '2017-07-10';
+$modify_before_date = '2017-07-14';
 
 
 function canon_modify_canonical_url($canonical_url) {
