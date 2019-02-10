@@ -1,6 +1,13 @@
 <?php
 /*
  * Plugin Name: Canonical URL is http:
+ * Plugin URI: https://github.com/lastorset/canonical-http
+ * Description: Modify the canonical URL used by Facebook etc. to use HTTP instead of HTTPS. This is needed to preserve share counts when turning on TLS.
+ * Version: 1.0
+ * Author: Leif Arne Storset
+ * Author URI: https//github.com/lastorset
+ * License: GPL2
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
 function canon_modify_canonical_url($canonical_url) {
