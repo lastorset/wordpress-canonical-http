@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: Canonical URL is http:
- * Plugin URI: https://github.com/lastorset/canonical-http
+ * Plugin URI: https://github.com/lastorset/wordpress-canonical-http
  * Description: Modify the canonical URL used by Facebook etc. to use HTTP instead of HTTPS. This is needed to preserve share counts when turning on TLS.
  * Version: 1.0
  * Author: Leif Arne Storset
