@@ -1,23 +1,10 @@
 <?php
 /*
- * Plugin Name: Make ancient canon insecure
+ * Plugin Name: Canonical URL is http:
  */
 
-// TODO: Option: date
-
-$modify_before_date = '2017-07-14';
-
-
 function canon_modify_canonical_url($canonical_url) {
-    global $modify_before_date;
-
-    $date = get_the_date('Y-m-d');
-
-    if ($date < $modify_before_date) {
-        return str_replace('https://', 'http://', $canonical_url);
-    } else {
-        return str_replace('http://', 'https://', $canonical_url);
-    }
+    return str_replace('https://', 'http://', $canonical_url);
 }
 
 add_filter('get_canonical_url', 'canon_modify_canonical_url');
